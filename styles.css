@@ -5,6 +5,91 @@
 html,
 body {
   height: 100%;
+  width: 100%;
   margin: 0;
   padding-inline: 80px;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  cursor: default;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffdee000;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #fff;
+  padding: 0 40px;
+  width: 100%;
+  gap: 20px;
+}
+
+.hangman-gif {
+  width: 150px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 43%);
+}
+
+.section-result {
+  width: 45%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-result img {
+  display: none;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.section-info {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container-results {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+}
+
+.letters,
+.attemps {
+  margin-bottom: 10px;
+}
+
+.word,
+.underscore {
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
+
+.underscore {
+  text-decoration: underline;
+  text-decoration-color: #000;
+  text-decoration-thickness: 2px;
 }
